@@ -12,6 +12,8 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # 애플리케이션 코드 복사
 COPY . /app
 
+ENV PYTHONPATH=/app
+
 # 포트 8000 열기
 EXPOSE 8000
 
