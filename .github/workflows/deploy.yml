@@ -18,7 +18,7 @@ jobs:
         working-directory: ./ChromeExtension/server
 
       - name: Run Tests
-        run: docker run -e CI=true wjddn/recboj-test python app.py
+        run: docker run -e CI=true wjddn/recboj-test pytest
         working-directory: ./ChromeExtension/server
 
       - name: Generate deployment package
