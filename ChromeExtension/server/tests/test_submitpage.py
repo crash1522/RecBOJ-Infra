@@ -5,9 +5,9 @@ client = TestClient(app)
 
 def test_send_related_problem():
     request_data = {
-        "url": "some_url",
+        "url": "https://www.acmicpc.net/status?from_mine=1&problem_id=12738&user_id=crash1522",
         "div": 0,
-        "submits": []
+        "submits": ["맞았습니다!!"]
     }
     response = client.post("/submit_page/", json=request_data)
     assert response.status_code == 200

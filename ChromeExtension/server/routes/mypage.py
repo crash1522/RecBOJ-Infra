@@ -31,7 +31,6 @@ async def send_mypage_data(request_data: MyPageRequest):
         rotate = request_data.div
         filter = request_data.filter
         user_id = extract_user_id_from_mypage(current_url)
-
         strong_tag, weak_tag, strong_pcr, weak_pcr = weak_strong_rec(weak_strong_forget_df, user_id)
         try:
             if rotate == 0:
