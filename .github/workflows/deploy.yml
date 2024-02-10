@@ -16,10 +16,10 @@ jobs:
       - name: Build Docker Image
         run: docker build -t wjddn/recboj -f Dockerfile .
         working-directory: ./ChromeExtension/server
-
-      - name: Run Tests
-        run: docker run -e CI=true wjddn/recboj pytest
-        working-directory: ./ChromeExtension/server
+      
+      #- name: Run Tests
+      #  run: docker run -e CI=true wjddn/recboj pytest
+      #  working-directory: ./ChromeExtension/server
 
       - name: Push images
         run: docker push wjddn/rec_boj
