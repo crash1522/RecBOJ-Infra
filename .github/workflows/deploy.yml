@@ -22,7 +22,7 @@ jobs:
       #  working-directory: ./ChromeExtension/server
 
       - name: Push images
-        run: docker push wjddn/rec_boj
+        run: docker push wjddn/recboj
 
       - name: Generate deployment package
         run: bash deploy.sh
