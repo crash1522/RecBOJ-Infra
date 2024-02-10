@@ -26,7 +26,6 @@ jobs:
 
       - name: Generate deployment package
         run: bash deploy.sh
-        working-directory: ./ChromeExtension/server
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
