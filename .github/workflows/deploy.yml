@@ -1,4 +1,4 @@
-name: Deploy RecBOJ Backend
+name: Deploy RecBOJ Backend # test ver
 on:
   push:
     branches:
